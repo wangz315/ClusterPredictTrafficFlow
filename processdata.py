@@ -42,6 +42,7 @@ def process_data(train, test, lags):
 	X, y = np.array(X), np.array(y)
 
 	X_train = X.reshape(X.shape[0], lags, X.shape[3])
+	# X_train = X.reshape(X.shape[0], lags, X.shape[2])
 	y_train = y
 
 
@@ -56,6 +57,7 @@ def process_data(train, test, lags):
 	X, y = np.array(X), np.array(y)
 
 	X_test = X.reshape(X.shape[0], lags, X.shape[3])
+	# X_train = X.reshape(X.shape[0], lags, X.shape[2])
 	y_test = y
 
 	return X_train, y_train, X_test, y_test, scaler_train, scaler_test

@@ -78,6 +78,20 @@ def main():
 		train = traindict[i]
 		test = testdict[i]
 
+		temptrain = dict()
+		for k,v in train.items():
+			temptrain[k] = v
+			break
+
+		train = temptrain
+
+		temptest = dict()
+		for k,v in test.items():
+			temptest[k] = v
+			break
+
+		test = temptest
+
 		print('Training cluster: %d/%d' % (i, max(clusters)+1))
 		X_train, y_train, _, _, _, _ = process_data(train, test, lag)
 		m = get_lstm([12, 64, 64, 1], X_train.shape)

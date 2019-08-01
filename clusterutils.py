@@ -1,3 +1,4 @@
+from __future__ import print_function
 import networkx as nx # graph package
 import numpy as np
 import pandas as pd # csv handler
@@ -14,6 +15,7 @@ from sklearn.cluster import AgglomerativeClustering
 from colorama import Fore
 from colorama import Style
 from timeit import default_timer as timer
+
 
 
 def read_graph():

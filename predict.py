@@ -125,19 +125,19 @@ def predict_cluster():
 		train = traindict[i]
 		test = testdict[i]
 
-		# train = dict()
-		# test = dict()
+		temptrain = dict()
+		for k,v in train.items():
+			temptrain[k] = v
+			break
 
-		# for k, v in traindict[i].items():
-		# 	train[k] = v
-		# 	break
+		train = temptrain
 
-		# for k, v in testdict[i].items():
-		# 	test[k] = v
-		# 	break
+		temptest = dict()
+		for k,v in test.items():
+			temptest[k] = v
+			break
 
-		# print(train)
-		# print(len(train))
+		test = temptest
 
 		print('Predicting cluster: %d/%d' % (i, max(clusters)+1))
 		_, _, X_test, y_test, scaler_train, scaler_test = process_data(train, test, lag)
