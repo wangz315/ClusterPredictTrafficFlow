@@ -27,3 +27,6 @@ If you use any codes from this repository, please cite the follow papers:
   organization={IEEE}
 }
 </pre>
+
+## Copyright
+See [LICENSE](LICENSE) for details.
