@@ -4,7 +4,7 @@ The project has two parts:
 * Predict traffic flow by using affinity propagation clustering algorithm and LSTM.
 
 ## Citation
-If you use any codes from this repository, please cite the follow papers:
+If you use any codes from this repository, please cite the following papers:
 
 <pre>
 @inproceedings{wang2019dynamic,
